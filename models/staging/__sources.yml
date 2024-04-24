@@ -1,0 +1,17 @@
+version: 2
+sources:
+  - name: exl_dbt_training
+    database: music
+    schema: dwh_training
+    tables:
+      - name: album
+      - name: artist
+      - name: customer
+      - name: employee
+      - name: genre
+      - name: invoice
+      - name: invoiceline
+      - name: mediatype
+      - name: playlist
+      - name: playlisttrack
+      - name: track
