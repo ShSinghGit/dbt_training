@@ -1,17 +1,40 @@
 version: 2
+
 sources:
-  - name: exl_dbt_training
-    database: music
-    schema: dwh_training
-    tables:
-      - name: album
-      - name: artist
-      - name: customer
-      - name: employee
-      - name: genre
-      - name: invoice
-      - name: invoiceline
-      - name: mediatype
-      - name: playlist
-      - name: playlisttrack
-      - name: track
+- name: exl_dbt_training
+  database: music
+  schema: dwh_training
+
+  tables:
+    - name: album
+      description: This is a raw data housing music album data
+
+    - name: artist
+      description: This is a raw data table housing music artist data
+
+    - name: customer
+      description: This is a raw data table housing customer data with basic identity and geographic information
+
+    - name: employee
+      description: This is a raw data table housing employee data with basic identity and geographic information
+
+    - name: genre
+      description: This is a numbered list of music genres
+
+    - name: invoice
+      description: This is a raw data table of payments made with some additional customer info
+
+    - name: invoiceline
+      description: This is a raw data table housing a list of invoices.
+
+    - name: mediatype
+      description: This is a raw data table housing a list of media types.
+      
+    - name: playlist
+      description: This is a raw data table housing a list of playlists
+
+    - name: playlisttrack
+      description: This is a raw data table housing a list of playlist tracks
+
+    - name: track
+      description: This is a raw data table housing all relevant song data
