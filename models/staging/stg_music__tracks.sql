@@ -2,7 +2,7 @@ select
     TrackId as track_id,
     Name as track_name,
     AlbumId as album_id,
-    MediaTypeId as mediatype_id,
+    MediaTypeId as media_type_id,
     GenreId as genre_id,
     Composer as track_composer,
     Milliseconds as track_length_ms,
